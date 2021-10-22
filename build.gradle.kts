@@ -25,14 +25,6 @@ tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
 }
 
-tasks.dokkaGfm.configure {
-    outputDirectory.set(projectDir.resolve("docs/gfm"))
-}
-
-tasks.dokkaHtml.configure {
-    outputDirectory.set(projectDir.resolve("docs/html"))
-}
-
 val sourcesJar by tasks.registering(Jar::class) {
     classifier = "sources"
     from(sourceSets.main.get().allSource)
@@ -45,4 +37,22 @@ publishing {
             artifact(sourcesJar.get())
         }
     }
+}
+
+tasks.dokkaGfm.configure {
+    outputDirectory.set(projectDir.resolve("docs/gfm"))
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(projectDir.resolve("docs/html"))
+}
+
+tasks.register("gen-docs") {
+    dependsOn("dokkaGfm")
+    dependsOn("dokkaHtml")
+}
+
+tasks.getByName<Delete>("clean") {
+    delete.add(projectDir.resolve("docs/gfm"))
+    delete.add(projectDir.resolve("docs/html"))
 }
