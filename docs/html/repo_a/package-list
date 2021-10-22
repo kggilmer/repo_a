@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/repo_a/[root]/index.html
+$dokka.location:/Thing///PointingToDeclaration/repo_a/[root]/-thing/index.html
+$dokka.location:/Thing/Thing/#kotlin.String/PointingToDeclaration/repo_a/[root]/-thing/-thing.html
+$dokka.location:/Thing/name/#/PointingToDeclaration/repo_a/[root]/-thing/name.html
+$dokka.location:/ThingGenerator///PointingToDeclaration/repo_a/[root]/-thing-generator/index.html
+$dokka.location:/ThingGenerator/generate/#kotlin.String/PointingToDeclaration/repo_a/[root]/-thing-generator/generate.html
+$dokka.location:/TreeGenerator///PointingToDeclaration/repo_a/[root]/-tree-generator/index.html
+$dokka.location:/TreeGenerator/TreeGenerator/#/PointingToDeclaration/repo_a/[root]/-tree-generator/-tree-generator.html
+$dokka.location:/TreeGenerator/generate/#kotlin.String/PointingToDeclaration/repo_a/[root]/-tree-generator/generate.html
+
+

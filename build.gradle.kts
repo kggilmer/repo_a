@@ -26,7 +26,11 @@ tasks.withType<KotlinCompile>() {
 }
 
 tasks.dokkaGfm.configure {
-    outputDirectory.set(projectDir.resolve("docs"))
+    outputDirectory.set(projectDir.resolve("docs/gfm"))
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(projectDir.resolve("docs/html"))
 }
 
 val sourcesJar by tasks.registering(Jar::class) {
