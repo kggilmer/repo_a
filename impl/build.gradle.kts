@@ -14,11 +14,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnit()
+    implementation(project(":api"))
 }
 
 tasks.withType<KotlinCompile>() {
