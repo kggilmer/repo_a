@@ -1,0 +1,10 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:////PointingToDeclaration/api/[root]/index.md
+$dokka.location:/Thing///PointingToDeclaration/api/[root]/-thing/index.md
+$dokka.location:/Thing/Thing/#kotlin.String/PointingToDeclaration/api/[root]/-thing/-thing.md
+$dokka.location:/Thing/name/#/PointingToDeclaration/api/[root]/-thing/name.md
+$dokka.location:/ThingGenerator///PointingToDeclaration/api/[root]/-thing-generator/index.md
+$dokka.location:/ThingGenerator/generate/#kotlin.String/PointingToDeclaration/api/[root]/-thing-generator/generate.md
+
+

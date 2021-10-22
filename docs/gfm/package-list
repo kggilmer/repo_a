@@ -1,0 +1,12 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:////PointingToDeclaration/impl/impl/[root]/index.md
+$dokka.location:/Thing///PointingToDeclaration/api/api/[root]/-thing/index.md
+$dokka.location:/Thing/Thing/#kotlin.String/PointingToDeclaration/api/api/[root]/-thing/-thing.md
+$dokka.location:/Thing/name/#/PointingToDeclaration/api/api/[root]/-thing/name.md
+$dokka.location:/ThingGenerator///PointingToDeclaration/api/api/[root]/-thing-generator/index.md
+$dokka.location:/ThingGenerator/generate/#kotlin.String/PointingToDeclaration/api/api/[root]/-thing-generator/generate.md
+$dokka.location:/TreeGenerator///PointingToDeclaration/impl/impl/[root]/-tree-generator/index.md
+$dokka.location:/TreeGenerator/TreeGenerator/#/PointingToDeclaration/impl/impl/[root]/-tree-generator/-tree-generator.md
+$dokka.location:/TreeGenerator/generate/#kotlin.String/PointingToDeclaration/impl/impl/[root]/-tree-generator/generate.md
+
