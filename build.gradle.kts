@@ -13,12 +13,6 @@ allprojects {
     }
 }
 
-subprojects {
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>() {
-        kotlinOptions.jvmTarget = "1.8"
-    }
-}
-
 tasks.getByName<Delete>("clean") {
     delete.add(projectDir.resolve("docs/gfm"))
     delete.add(projectDir.resolve("docs/html"))
@@ -35,18 +29,4 @@ tasks.dokkaHtmlMultiModule.configure {
 tasks.register("gen-docs") {
     dependsOn("dokkaGfmMultiModule")
     dependsOn("dokkaHtmlMultiModule")
-}
-
-val sourcesJar by tasks.registering(Jar::class) {
-    classifier = "sources"
-    from(sourceSets.main.get().allSource)
-}
-
-publishing {
-    publications {
-        register("mavenJava", MavenPublication::class) {
-            from(components["java"])
-            artifact(sourcesJar.get())
-        }
-    }
 }
