@@ -7,8 +7,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":api:core"))
-    implementation(project(":api:trees"))
+    api(project(":api:core"))
 }
 
 val sourcesJar by tasks.registering(Jar::class) {
@@ -29,7 +28,7 @@ publishing {
     publications {
         register("mavenJava", MavenPublication::class) {
             groupId = "me.kggilmer"
-            artifactId = "thing-impl"
+            artifactId = "thing-trees"
             version = "1.2"
             from(components["java"])
             artifact(sourcesJar.get())

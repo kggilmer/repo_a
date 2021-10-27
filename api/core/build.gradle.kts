@@ -3,17 +3,12 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm")
     id("org.jetbrains.dokka")
-    id("maven-publish")
-}
-
-dependencies {
-    implementation(project(":api:core"))
-    implementation(project(":api:trees"))
+    `maven-publish`
 }
 
 val sourcesJar by tasks.registering(Jar::class) {
-    archiveClassifier.set("sources")
-    from(sourceSets.main.get().allSource.srcDirs)
+    classifier = "sources"
+    from(sourceSets.main.get().allSource)
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>() {
@@ -29,7 +24,7 @@ publishing {
     publications {
         register("mavenJava", MavenPublication::class) {
             groupId = "me.kggilmer"
-            artifactId = "thing-impl"
+            artifactId = "thing-api"
             version = "1.2"
             from(components["java"])
             artifact(sourcesJar.get())

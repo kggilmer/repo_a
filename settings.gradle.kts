@@ -1,4 +1,4 @@
 
 rootProject.name = "repo_a"
 
-include(":api", ":impl")
+include(":api", ":api:core", ":api:trees", ":impl")
