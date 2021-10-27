@@ -1,0 +1,18 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:////PointingToDeclaration/trees/trees/[root]/index.md
+$dokka.location:/AnotherTreeGenerator///PointingToDeclaration/impl/impl/[root]/-another-tree-generator/index.md
+$dokka.location:/AnotherTreeGenerator/AnotherTreeGenerator/#/PointingToDeclaration/impl/impl/[root]/-another-tree-generator/-another-tree-generator.md
+$dokka.location:/AnotherTreeGenerator/generate/#kotlin.String/PointingToDeclaration/impl/impl/[root]/-another-tree-generator/generate.md
+$dokka.location:/AnotherTreeGenerator/generateThings/#/PointingToDeclaration/impl/impl/[root]/-another-tree-generator/generate-things.md
+$dokka.location:/Thing///PointingToDeclaration/core/core/[root]/-thing/index.md
+$dokka.location:/Thing/Thing/#kotlin.String/PointingToDeclaration/core/core/[root]/-thing/-thing.md
+$dokka.location:/Thing/name/#/PointingToDeclaration/core/core/[root]/-thing/name.md
+$dokka.location:/ThingGenerator///PointingToDeclaration/core/core/[root]/-thing-generator/index.md
+$dokka.location:/ThingGenerator/generate/#kotlin.String/PointingToDeclaration/core/core/[root]/-thing-generator/generate.md
+$dokka.location:/ThingGenerator/generateThings/#/PointingToDeclaration/core/core/[root]/-thing-generator/generate-things.md
+$dokka.location:/TreeGenerator///PointingToDeclaration/trees/trees/[root]/-tree-generator/index.md
+$dokka.location:/TreeGenerator/TreeGenerator/#/PointingToDeclaration/trees/trees/[root]/-tree-generator/-tree-generator.md
+$dokka.location:/TreeGenerator/generate/#kotlin.String/PointingToDeclaration/trees/trees/[root]/-tree-generator/generate.md
+$dokka.location:/TreeGenerator/generateThings/#/PointingToDeclaration/trees/trees/[root]/-tree-generator/generate-things.md
+
